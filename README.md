@@ -17,9 +17,9 @@ const code = `
       background:red;
     }
 	
-	:root abc{
-		color:red;
-	}
+    :root abc{
+      color:red;
+    }
   `
 instance.parse(code).css
 // output: [{ name:':root',css:[{name:'background',value:'red'}]}, {name:':root abc',css:[{name:'color',value:'red'}]}]
