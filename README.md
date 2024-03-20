@@ -31,7 +31,7 @@ instance.parse(code).css
 ### 参数：new CSSParser(opt:ParserOption )
 
 | 参数 | 类型 | 名称 | 是否必填 | 默认值 |
-|-|-|-|-|
+| - | - | - | - | - |
 | mergeGroup | Boolean | 是否合并多条CSS组 | 否 | 是 |
 | mergeCSS | Boolean | 是否合并简写样式条目，如：border:1px, border-width:1px | 否 | 否 |
 
