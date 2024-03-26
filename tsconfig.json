@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    //see:https://www.cnblogs.com/fangsmile/p/14239529.html
+    // /* target用于指定编译后js文件里的语法应该遵循哪个JavaScript的版本的版本目标: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */,
+    //"target": "esnext",
+    "target": "es6",
+    /* 用来指定编译后的js要使用的模块标准: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+    "module": "ESNext",
+    // Search under node_modules for non-relative imports.
+    //"moduleResolution": "node",
+    // Process & infer types from .js files.
+    "allowJs": true,
+    // Don't emit; allow Babel to transform files.
+    //"noEmit": true,
+    "noEmit": false,
+    "noEmitOnError": true,
+    // Enable strictest settings like strictNullChecks & noImplicitAny.
+    "strict": true,
+    // Disallow features that require cross-file information for emit.
+    //"isolatedModules": true,
+    // Import non-ES modules as default imports.
+    "esModuleInterop": true,
+    "baseUrl": "./src",
+    "outDir": "./dist/",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "packages",
+    "tpl.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/__tests__/*"
+  ]
+}
